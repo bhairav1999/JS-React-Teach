@@ -461,25 +461,154 @@ every
 // }
 
 
+// function sum(a,c){
+//      return function(b){
+//         return a+b
+//      }
+    
+   
+// }
+
+
+// console.log('First call')
+// console.log(sum(3, 5)) // 8
+// console.log('Second call')
+// console.log(sum(3)(5)) // 8
+
+
+
+// function sum(a, b) {
+//     if (b === undefined) {
+      
+//       return function(c) {
+//         return a + c;
+//       };
+//     } else {
+      
+//       return a + b;
+//     }
+//   }
+
+// console.log('First call')
+// console.log(sum(3,5)) // 8
+// console.log('Second call')
+// console.log(sum(3)(5)) // 8
+
+
+
+//-------------------------------->
+
+
+// const data=new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         reject("some issue");
+//     })
+// })
+
+// data.then((item)=>{
+//     console.log(item)
+// })
+
+// console.log("hello")
+
+
+// const data=fetch("https://jsonplaceholder.typicode.com/users")
+// data.then((item)=>{
+//    return item.json()
+// }).then((result)=>{
+//     console.log(result)
+// })
 
 
 
 
 
+// async function greet(){
+//     var data=new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//          resolve("all hello")
+//         },2000)
+//     })
+// var b = await data;
+// console.log(b)
+    
+// }
+// greet()
+
+
+
+// async function greet(){
+
+
+//     var data=new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             resolve("all")
+//         }, 2000);
+//     })
+//     var a=await data
+//     console.log(a)
+
+
+// }
+
+// greet()
+
+
+///----fetch 
+
+//  async function greet(){
+//         var a= await fetch("https://jsonplaceholder.typicode.com/users")
+//         var a=await a.json()
+//         console.log(a)
+//     }
+//     greet()
+
+
+// async function greet(){
+//     var a=await fetch("https://jsonplaceholder.typicode.com/users")
+//     var a=await a.json()
+//     console.log(a)
+// }
+// greet()
+
+
+
+ // [[Prototype]]
+// "Defination"- It is mechanism by which objects in js inherit features from another objects
+
+let a ={
+    name:'Vasim',
+    language:'Javascript'
+}
+console.log(a);
+    
+let b ={
+    name1:'Ram'
+}
 
 
 
 
-;
+a._proto_= b
 
 
 
+// var obj= {
+// id:1,
+
+// }
+
+// function greet(x,y){
+//     console.log(x,y)
+// console.log(this)
+// }
+// greet(10,20)
 
 
-
-
-
-
+// greet.call(obj,40,50)
+// greet.apply(obj,[60,70])
+// const retunmethod = greet.bind(obj ,60,80)
+// retunmethod()
 
 
 
